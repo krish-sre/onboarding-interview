@@ -1,0 +1,173 @@
+{
+  "Service Overview & Architecture": [
+    {
+      "id": "q1",
+      "question": "What is the primary function of your service and who are its main users?",
+      "type": "longtext"
+    },
+    {
+      "id": "q2",
+      "question": "What technology stack does your service use (language, framework, database, etc.)?",
+      "type": "longtext"
+    },
+    {
+      "id": "q3",
+      "question": "How does your service interact with other services? What are its critical dependencies?",
+      "type": "longtext"
+    }
+  ],
+  "Monitoring & Observability": [
+    {
+      "id": "q4",
+      "question": "What metrics do you currently collect for your service?",
+      "type": "longtext"
+    },
+    {
+      "id": "q5",
+      "question": "Do you have dashboards showing service health, performance, and business metrics?",
+      "type": "boolean"
+    },
+    {
+      "id": "q6",
+      "question": "What logging strategy do you use? Are logs structured and searchable?",
+      "type": "longtext"
+    },
+    {
+      "id": "q7",
+      "question": "Are you using Open Telemetry?",
+      "type": "boolean"
+    },
+    {
+      "id": "q8",
+      "question": "Are you using Runbooks (Jupyter Notebooks)?",
+      "type": "boolean"
+    }
+  ],
+  "Alerting & Incident Response": [
+    {
+      "id": "q9",
+      "question": "What alerts do you have configured? Are they actionable and not noisy?",
+      "type": "longtext"
+    },
+    {
+      "id": "q10",
+      "question": "How do you define and measure your service's SLIs (Service Level Indicators)?",
+      "type": "longtext"
+    },
+    {
+      "id": "q11",
+      "question": "Do you have established SLOs (Service Level Objectives) for your service?",
+      "type": "boolean"
+    },
+    {
+      "id": "q12",
+      "question": "What is your typical incident response process?",
+      "type": "longtext"
+    },
+    {
+      "id": "q13",
+      "question": "How do you conduct post-incident reviews? Do you track action items?",
+      "type": "longtext"
+    }
+  ],
+  "Deployment & Release Management": [
+    {
+      "id": "q14",
+      "question": "How do you deploy your service? Is the process automated?",
+      "type": "longtext"
+    },
+    {
+      "id": "q15",
+      "question": "Do you use feature flags or blue-green deployments?",
+      "type": "boolean"
+    },
+    {
+      "id": "q16",
+      "question": "What is your rollback strategy if a deployment fails?",
+      "type": "longtext"
+    },
+    {
+      "id": "q17",
+      "question": "How do you test your service before production deployment?",
+      "type": "longtext"
+    }
+  ],
+  "Capacity & Performance": [
+    {
+      "id": "q18",
+      "question": "How do you handle traffic spikes or unexpected load increases?",
+      "type": "longtext"
+    },
+    {
+      "id": "q19",
+      "question": "Do you have auto-scaling configured? How does it work?",
+      "type": "longtext"
+    },
+    {
+      "id": "q20",
+      "question": "What are your service's current performance bottlenecks?",
+      "type": "longtext"
+    },
+    {
+      "id": "q21",
+      "question": "How do you conduct capacity planning?",
+      "type": "longtext"
+    },
+    {
+      "id": "q22",
+      "question": "Do you perform load testing regularly?",
+      "type": "boolean"
+    }
+  ],
+  "Reliability & Error Handling": [
+    {
+      "id": "q23",
+      "question": "How does your service handle failures of its dependencies?",
+      "type": "longtext"
+    },
+    {
+      "id": "q24",
+      "question": "How do you ensure data consistency during failures?",
+      "type": "longtext"
+    },
+    {
+      "id": "q25",
+      "question": "What is your disaster recovery plan?",
+      "type": "longtext"
+    },
+    {
+      "id": "q26",
+      "question": "How often do you test your backup and recovery procedures?",
+      "type": "text"
+    }
+  ],
+  "Documentation & Knowledge Sharing": [
+    {
+      "id": "q27",
+      "question": "Do you have runbooks for common operational tasks?",
+      "type": "boolean"
+    },
+    {
+      "id": "q28",
+      "question": "Is your service's API documented?",
+      "type": "boolean"
+    },
+    {
+      "id": "q29",
+      "question": "How do you onboard new team members to your service?",
+      "type": "longtext"
+    }
+  ],
+  "Team & Process": [
+    {
+      "id": "q30",
+      "question": "How many people can operate your service in production?",
+      "type": "text"
+    },
+    {
+      "id": "q31",
+      "question": "What is your team's biggest operational pain point right now?",
+      "type": "longtext"
+    }
+  ]
+}

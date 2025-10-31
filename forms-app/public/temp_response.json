@@ -1,0 +1,14 @@
+{
+  "Service Overview & Architecture": {
+    "q1": "Our service is a customer-facing REST API that handles user authentication and profile management. Main users are mobile and web applications.",
+    "q2": "Node.js with Express framework, PostgreSQL database, Redis for caching, deployed on Kubernetes.",
+    "q3": "Depends on Auth0 for SSO, SendGrid for emails, and AWS S3 for file storage. Critical dependency is the user database."
+  },
+  "Monitoring & Observability": {
+    "q4": "We collect request latency, error rates, CPU/memory usage, database connection pool metrics.",
+    "q5": true,
+    "q6": "Using structured JSON logging with Winston, centralized in Elasticsearch for searching.",
+    "q7": true,
+    "q8": false
+  }
+}

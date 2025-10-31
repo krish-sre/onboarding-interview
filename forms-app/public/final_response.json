@@ -1,0 +1,53 @@
+{
+  "version": "v1.0",
+  "date": "2025-10-31",
+  "responses": {
+    "Service Overview & Architecture": {
+      "q1": "Our service is a customer-facing REST API that handles user authentication and profile management. Main users are mobile and web applications.",
+      "q2": "Node.js with Express framework, PostgreSQL database, Redis for caching, deployed on Kubernetes.",
+      "q3": "Depends on Auth0 for SSO, SendGrid for emails, and AWS S3 for file storage. Critical dependency is the user database."
+    },
+    "Monitoring & Observability": {
+      "q4": "We collect request latency, error rates, CPU/memory usage, database connection pool metrics.",
+      "q5": true,
+      "q6": "Using structured JSON logging with Winston, centralized in Elasticsearch for searching.",
+      "q7": true,
+      "q8": false
+    },
+    "Alerting & Incident Response": {
+      "q9": "Alerts for high error rate (>1%), latency p99 >500ms, pod restarts, and database connection failures.",
+      "q10": "Primary SLI is API response time and availability. We measure success rate and latency at p50, p95, p99.",
+      "q11": true,
+      "q12": "PagerDuty alerts on-call engineer, incident channel created in Slack, war room if needed.",
+      "q13": "Post-mortems within 48 hours, root cause analysis, action items tracked in Jira."
+    },
+    "Deployment & Release Management": {
+      "q14": "GitOps with ArgoCD, automated CI/CD pipeline in GitHub Actions. Blue-green deployment strategy.",
+      "q15": true,
+      "q16": "Automated rollback via ArgoCD if health checks fail. Manual rollback available via kubectl.",
+      "q17": "Unit tests, integration tests, staging environment validation, canary deployment to 10% traffic."
+    },
+    "Capacity & Performance": {
+      "q18": "Horizontal pod autoscaling based on CPU and custom metrics. Also have load shedding logic.",
+      "q19": "Yes, HPA configured to scale from 3 to 20 pods based on CPU >70% and request rate.",
+      "q20": "Database queries on large tables without proper indexes. Working on query optimization.",
+      "q21": "Quarterly capacity planning based on growth projections and historical traffic patterns.",
+      "q22": true
+    },
+    "Reliability & Error Handling": {
+      "q23": "Circuit breakers for external services, fallback responses, retry logic with exponential backoff.",
+      "q24": "Database transactions with proper isolation levels, idempotency keys for critical operations.",
+      "q25": "Multi-region deployment, automated database backups every 6 hours, tested failover procedures.",
+      "q26": "Monthly"
+    },
+    "Documentation & Knowledge Sharing": {
+      "q27": true,
+      "q28": true,
+      "q29": "Week 1: Setup and codebase walkthrough, Week 2: Shadow on-call, Week 3: Documentation review, Week 4: First on-call rotation."
+    },
+    "Team & Process": {
+      "q30": "5 engineers",
+      "q31": "Alert fatigue from noisy monitoring, need better dashboards and runbooks for common issues."
+    }
+  }
+}
